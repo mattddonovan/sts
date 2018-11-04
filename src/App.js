@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import './App.scss';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      
+    }
+  }
   render() {
     return (
       <div className="App">
@@ -10,10 +17,10 @@ class App extends Component {
         </header>
         <div className="container">
           <div className="panel panel-left">
-            <h1>This is the Headline On The Left</h1>
+            <h2>This is the Headline On The Left</h2>
           </div>
           <div className="panel panel-right">
-            <h1>This is the Headline on the Right</h1>
+            <h2>This is the Headline on the Right</h2>
           </div>
         </div>
       </div>
