@@ -1,3 +1,7 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .App {
   padding: 0 20px;
 }
@@ -14,7 +18,7 @@
     top: 0;
     
     h1 {
-      transition: opacity .6s ease;
+      transition: opacity 250ms ease;
       opacity: 0;
     }
     
@@ -31,9 +35,9 @@
     background-color: yellow;
     position: absolute;
     width: 100%;
-    -webkit-clip-path: polygon(0 0, 75% 0, 30% 100%, 0 100%);
-    clip-path: polygon(0 0, 75% 0, 30% 100%, 0 100%);
-    transition: all .6s ease;
+    -webkit-clip-path: polygon(0 0, 75% 0, 25% 100%, 0 100%);
+    clip-path: polygon(0 0, 75% 0, 25% 100%, 0 100%);
+    transition: all 300ms ease;
     &:focus,
     &:hover {
       -webkit-clip-path: polygon(0 0, 95% 0, 50% 100%, 0 100%);
@@ -49,9 +53,9 @@
     background-color: magenta;
     position: absolute;
     width: 100%;
-    -webkit-clip-path: polygon(100% 0, 75% 0, 30% 100%, 100% 100%);
-    clip-path: polygon(100% 0, 75% 0, 30% 100%, 100% 100%);
-    transition: all .6s ease;
+    -webkit-clip-path: polygon(100% 0, 75% 0, 25% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 75% 0, 25% 100%, 100% 100%);
+    transition: all 300ms ease;
     &:focus,
     &:hover {
       -webkit-clip-path: polygon(100% 0, 50% 0, 5% 100%, 100% 100%);
