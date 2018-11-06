@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.scss';
+import SlideFeature from './components/SlideFeature';
+import data from './api/data.json';
 
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      
+      featuredItems: data.posts
     }
   }
   render() {
@@ -15,14 +17,9 @@ class App extends Component {
         <header>
           <h1>SteelSeries Demo</h1>
         </header>
-        <div className="container">
-          <div className="panel panel-left">
-            <h2>This is the Headline On The Left</h2>
-          </div>
-          <div className="panel panel-right">
-            <h2>This is the Headline on the Right</h2>
-          </div>
-        </div>
+        <SlideFeature 
+          posts = {this.state.featuredItems}
+        />
       </div>
     );
   }

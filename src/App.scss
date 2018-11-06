@@ -21,6 +21,10 @@
       transition: opacity 250ms ease;
       opacity: 0;
     }
+
+    img {
+      display: inline-block;
+    }
     
     &:focus,
     &:hover {
