@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "title": "Monster Hunter World",
+      "subtitle": "A new take on the classic series",
+      "imageUrl": "https://i.imgur.com/MnaerVj.jpg",
+      "linkUrl": "http://www.monsterhunterworld.com/"
+    },
+    {
+      "title": "Red Dead Redemption 2",
+      "subtitle": "The latest from Rockstar Games",
+      "imageUrl": "http://i.imgur.com/5qdVUj8.jpg",
+      "linkUrl": "https://www.rockstargames.com/reddeadredemption2/"
+    }
+  ]
+}

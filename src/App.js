@@ -1,21 +1,25 @@
 import React, { Component } from 'react';
 import './App.scss';
+import SlideFeature from './components/SlideFeature';
+import data from './api/data.json';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      featuredItems: data.posts
+    }
+  }
   render() {
     return (
       <div className="App">
         <header>
           <h1>SteelSeries Demo</h1>
         </header>
-        <div className="container">
-          <div className="panel panel-left">
-            <h1>This is the Headline On The Left</h1>
-          </div>
-          <div className="panel panel-right">
-            <h1>This is the Headline on the Right</h1>
-          </div>
-        </div>
+        <SlideFeature 
+          posts = {this.state.featuredItems}
+        />
       </div>
     );
   }
