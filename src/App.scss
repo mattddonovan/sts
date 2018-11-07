@@ -18,18 +18,34 @@
     position: absolute;
     top: 0;
     
-    h1 {
-      transition: opacity 250ms ease;
+    .panel-text {
+      color: whitesmoke;
+      transition: opacity 300ms ease;
       opacity: 0;
-    }
 
-    img {
-      display: inline-block;
+      a {
+        &:color {
+          color: whitesmoke;
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+        &:visited {
+          color: whitesmoke;
+        }
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      p {
+        margin-top: 0px;
+      }
     }
     
     &:focus,
     &:hover {
-      h1 {
+      .panel-text {
         opacity: 1;
       }
     }
@@ -51,6 +67,10 @@
         clip-path: polygon(100% 0, 95% 0, 50% 100%, 100% 100%);
       }
     }
+    .panel-text {
+      position: absolute;
+      left: 20px;
+    }
   }
   
   .panel-right {
@@ -64,5 +84,9 @@
       -webkit-clip-path: polygon(100% 0, 50% 0, 5% 100%, 100% 100%);
       clip-path: polygon(100% 0, 50% 0, 5% 100%, 100% 100%);
     }
+  }
+  .panel-text {
+    position: absolute;
+    right: 20px;
   }
 }
