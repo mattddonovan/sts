@@ -1,3 +1,4 @@
+// global styles
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -6,18 +7,20 @@
   padding: 0 20px;
 }
 
+// container
 .container {
-  //background: cyan; debug
   position: relative;
   height: 300px;
   width: 100%;
   max-width: 1150px;
   
+  // panel shared styles
   .panel {
     height: 300px;
     position: absolute;
     top: 0;
     
+    // panel text shared styles
     .panel-text {
       color: whitesmoke;
       transition: opacity 300ms ease;
@@ -52,8 +55,8 @@
     
   }
   
+  // panel-left specific styles
   .panel-left {
-    //background-color: yellow; debug
     width: 100%;
     -webkit-clip-path: polygon(0 0, 75% 0, 25% 100%, 0 100%);
     clip-path: polygon(0 0, 75% 0, 25% 100%, 0 100%);
@@ -73,8 +76,8 @@
     }
   }
   
+  // panel-right specific styles
   .panel-right {
-    //background-color: magenta; debug
     width: 100%;
     -webkit-clip-path: polygon(100% 0, 75% 0, 25% 100%, 100% 100%);
     clip-path: polygon(100% 0, 75% 0, 25% 100%, 100% 100%);
