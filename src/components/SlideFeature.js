@@ -1,8 +1,9 @@
 import React from 'react';
 
+// SlideFeature component
 const SlideFeature = ({ posts }) => {
   
-  // grab post objects
+  // Grab post objects
   const postLeft  = posts[0];
   const postRight = posts[1];
 
@@ -22,13 +23,27 @@ const SlideFeature = ({ posts }) => {
     <div className="container">
       <div className="panel panel-left" style={ postLeftBgStyle }>
         <div className="panel-text">
-          <h2><a href={ postLeft.linkUrl }>{ postLeft.title }</a></h2>
+          <h2>
+            <a 
+              href={ postLeft.linkUrl }
+              target="_blank"
+              rel="noopener noreferrer">
+                { postLeft.title }
+            </a>
+          </h2>
           <p>{ postLeft.subtitle }</p>
         </div>
       </div>
       <div className="panel panel-right" style={ postRightBgStyle }>
         <div className="panel-text">
-          <h2><a href={ postRight.linkUrl }>{ postRight.title }</a></h2>
+          <h2>
+            <a 
+              href={ postRight.linkUrl } 
+              target="_blank"
+              rel="noopener noreferrer">
+                { postRight.title }
+              </a>
+            </h2>
           <p>{ postRight.subtitle }</p>
         </div>
       </div>
