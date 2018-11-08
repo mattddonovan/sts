@@ -27,10 +27,8 @@
       opacity: 0;
 
       a {
-        &:color {
-          color: whitesmoke;
-          text-decoration: none;
-        }
+        color: whitesmoke;
+        text-decoration: none;
         &:hover {
           text-decoration: underline;
         }
